@@ -1,0 +1,111 @@
+/* =========================================
+   Réinitialisation de base
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+}
+
+/* =========================================
+   En-tête (Logo et slogan)
+   ========================================= */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.slogan {
+    font-style: italic;
+    color: #666;
+    font-size: 15px;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   Carte principale (Statut)
+   ========================================= */
+.card {
+    background: white;
+    padding: 60px 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    /* Bordure supérieure verte par défaut (statut valide) */
+    border-top: 8px solid #28a745;
+    background: linear-gradient(to bottom, #ffffff, #f8fff9);
+    /* Animation d'apparition */
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animation fluide */
+@keyframes slideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px) scale(0.98); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+}
+
+/* Icône de statut (le grand check vert) */
+.status-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+    line-height: 1;
+    filter: drop-shadow(0 4px 6px rgba(40, 167, 69, 0.2));
+}
+
+/* Titre principal (Document Authentique) */
+h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+/* Sous-titre (Certifié par...) */
+.subtitle {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* =========================================
+   Pied de page
+   ========================================= */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #999;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
